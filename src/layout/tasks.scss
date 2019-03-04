@@ -1,0 +1,19 @@
+.la-tasks {
+  background: plum;
+  height: 100vh;
+
+  .la-tasks__logo {
+    height: 40px;
+    background-image: url("asset/logo-BL.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .la-tasks__tabs {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 50px;
+    text-align: center;
+  }
+}
