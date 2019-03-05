@@ -12,6 +12,14 @@ $color-black: rgb(0, 0, 0);
 
 $color-blue: #5c4dee;
 $color-purple: #7e36f6;
+$color-gradient: linear-gradient(
+  188deg,
+  rgba(92, 77, 238, 1) 0%,
+  rgba(126, 54, 246, 1) 100%
+);
+
+// background: rgb(92,77,238);
+// background: linear-gradient(188deg, rgba(92,77,238,1) 0%, rgba(126,54,246,1) 100%);
 
 // $color-green-dark: #10442e;
 // $color-green-light: #cfdedb;
