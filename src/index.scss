@@ -14,6 +14,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background: rgb(255, 255, 255);
   font-size: 10px;
+  color: $color-primary;
 }
 
 main {
@@ -26,17 +27,8 @@ main {
     "sidebar main";
 }
 
-h1 {
-  font-size: 50px;
-  font-weight: 300;
-}
-
-h2 {
-  font-size: 35px;
-}
-
 h3 {
-  font-size: 30px;
+  font-size: 15px;
 }
 
 h1,
@@ -66,11 +58,15 @@ i {
 }
 
 .la-btn {
-  background: $color-gradient;
-  color: $color-white;
-  padding: 5px 20px;
-  border-radius: 25px;
   font-size: 10px;
+  border: none;
   outline: none;
   cursor: pointer;
+
+  &--secondary {
+    // background: $color-gradient;
+    // color: $color-white;
+    padding: 5px 20px;
+    // border-radius: 25px;
+  }
 }

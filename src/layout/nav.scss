@@ -5,6 +5,10 @@
   align-items: center;
   padding: 10px;
 
+  @include responsive-sm {
+    flex-direction: column;
+  }
+
   .la-nav__tabs {
     display: flex;
     justify-self: start;
@@ -14,8 +18,44 @@
     display: flex;
     align-items: center;
 
-    .la-nav__item:nth-child(1) {
+    .dropdown {
+      position: relative;
+      display: inline-block;
+
+      &:hover .dropdown-content {
+        display: block;
+      }
+
+      button {
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        background: #f1f1f1;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+          background: #ffffff;
+          font-weight: 600;
+        }
+      }
+    }
+
+    // .la-nav__item:nth-child(1),
+    .la-btn {
       display: flex;
+      flex-direction: row;
+      align-items: center;
     }
   }
 
