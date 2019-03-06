@@ -1,5 +1,5 @@
 .la-nav {
-  background: orange;
+  // background: orange;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,11 +55,26 @@
       }
     }
 
-    // .la-nav__item:nth-child(1),
     .la-btn {
       display: flex;
       flex-direction: row;
       align-items: center;
+    }
+
+    .la-nav__item:nth-child(3) {
+      position: relative;
+
+      > span {
+        // .la-nav__notification {
+        background: $color-red;
+        color: $color-white;
+        position: absolute;
+        top: 4px;
+        right: -5px;
+        padding: 2px 6px;
+        border-radius: 50%;
+        font-size: 10px;
+      }
     }
   }
 

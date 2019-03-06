@@ -57,23 +57,23 @@
     }
 
     .la-main__img-01 {
-      background: yellow;
-      // background-image: url("asset/graph01.png");
+      // background: yellow;
+      background-image: url("asset/graph01.png");
     }
 
     .la-main__img-02 {
-      background: red;
-      // background-image: url("asset/graph02.png");
+      // background: red;
+      background-image: url("asset/graph02.png");
     }
 
     .la-main__img-03 {
-      background: green;
-      // background-image: url("asset/graph03.png");
+      // background: green;
+      background-image: url("asset/graph03.png");
     }
 
     .la-main__img-04 {
-      background: aqua;
-      // background-image: url("asset/graph04.png");
+      // background: aqua;
+      background-image: url("asset/graph04.png");
       grid-column: 1 / span 2;
 
       @include responsive-sm {
@@ -85,13 +85,14 @@
     }
 
     .la-main__img-05 {
-      background: lightgreen;
-      // background-image: url("asset/graph05.png");
+      // background: lightgreen;
+      background-image: url("asset/graph05.png");
     }
   }
 
   table {
     width: 100%;
+    // border: none;
 
     th,
     td {
@@ -102,9 +103,6 @@
       background: paleturquoise;
       text-align: left;
       padding: 10px 30px;
-    }
-
-    .la-table__edit {
     }
 
     td {
