@@ -1,5 +1,4 @@
 .la-nav {
-  // background: orange;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,6 +14,10 @@
   .la-nav__tabs {
     display: flex;
     justify-self: start;
+
+    .la-nav__tab:hover {
+      color: $color-blue;
+    }
   }
 
   .la-nav__menu {
@@ -31,8 +34,15 @@
       }
 
       button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         border: none;
         cursor: pointer;
+
+        &:hover {
+          color: $color-blue;
+        }
       }
 
       .dropdown-content {
@@ -51,14 +61,9 @@
         &:hover {
           background: #ffffff;
           font-weight: 600;
+          color: $color-blue;
         }
       }
-    }
-
-    .la-btn {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
     }
 
     .la-nav__item:nth-child(3) {
