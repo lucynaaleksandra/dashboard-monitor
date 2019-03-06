@@ -11,6 +11,13 @@
     flex-direction: column;
   }
 
+  button,
+  i,
+  .la-nav__tab,
+  .dropdown-content a {
+    color: $color-accent;
+  }
+
   .la-nav__tabs {
     display: flex;
     justify-self: start;
@@ -56,6 +63,7 @@
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
       }
+
       .dropdown-content a {
         background: #f1f1f1;
         padding: 12px 16px;

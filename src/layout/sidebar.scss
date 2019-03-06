@@ -1,11 +1,11 @@
 .la-sidebar {
   grid-area: sidebar;
-  padding: 10px;
   border: 1px solid $color-secondary;
 
   .la-sidebar__logo {
     grid-template-rows: 10vh;
     height: 40px;
+    margin: 5px;
     background-image: url("asset/logo-BL.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -19,6 +19,7 @@
     padding-top: 50px;
 
     .la-sidebar__tab {
+      color: $color-accent;
       padding: 15px 0;
       cursor: pointer;
       @include hover-scale-01;
