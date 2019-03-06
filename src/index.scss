@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-@import "./util/variables.scss";
-@import "./util/mediaq.scss";
+@import "./util/variables";
+@import "./util/mediaq";
+@import "./util/animations";
 
-@import "./layout/index.scss";
+@import "./layout/index";
 
 body {
   margin: 0;
@@ -26,10 +27,8 @@ main {
   grid-template-areas:
     "sidebar nav"
     "sidebar main";
-  // overflow-x: hidden;
 
   @include responsive-sm {
-    // grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr;
   }
   @include responsive-xs {
@@ -72,6 +71,7 @@ i {
   border: none;
   outline: none;
   cursor: pointer;
+  @include hover-scale-01;
 
   &--secondary {
     background: $color-gradient;

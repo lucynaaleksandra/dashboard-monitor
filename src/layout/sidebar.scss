@@ -1,11 +1,9 @@
 .la-sidebar {
-  // background: plum;
   grid-area: sidebar;
   padding: 10px;
-  border-right: 2px solid $color-secondary;
 
-  @include responsive-sm {
-  }
+  // @include responsive-sm {
+  // }
 
   .la-sidebar__logo {
     grid-template-rows: 10vh;
@@ -25,6 +23,7 @@
     .la-sidebar__tab {
       padding: 15px 0;
       cursor: pointer;
+      @include hover-scale-01;
 
       &:hover {
         color: $color-blue;

@@ -15,8 +15,12 @@
     display: flex;
     justify-self: start;
 
-    .la-nav__tab:hover {
-      color: $color-blue;
+    .la-nav__tab {
+      @include hover-scale-01;
+
+      &:hover {
+        color: $color-blue;
+      }
     }
   }
 
