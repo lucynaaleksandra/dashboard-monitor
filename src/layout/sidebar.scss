@@ -1,0 +1,28 @@
+.la-sidebar {
+  background: plum;
+  grid-area: sidebar;
+  padding: 10px;
+
+  @include responsive-sm {
+  }
+
+  .la-sidebar__logo {
+    grid-template-rows: 10vh;
+    height: 40px;
+    background-image: url("asset/logo-BL.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .la-sidebar__tabs {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+
+    .la-sidebar__tab {
+      padding-bottom: 40px;
+    }
+  }
+}

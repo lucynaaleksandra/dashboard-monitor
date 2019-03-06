@@ -1,0 +1,173 @@
+.la-main {
+  // background: $color-secondary;
+  background: coral;
+  padding: 20px;
+  overflow: hidden;
+
+  .la-main__header {
+    background: palegreen;
+    display: flex;
+    justify-content: space-between;
+
+    .la-main__item,
+    h3 {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .la-main__img-01,
+  .la-main__img-02,
+  .la-main__img-03,
+  .la-main__img-04,
+  .la-main__img-05 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .la-main__img-01,
+  .la-main__img-02,
+  .la-main__img-03 {
+    width: 100%;
+  }
+
+  .la-main__img-04,
+  .la-main__img-05 {
+    height: 300px;
+
+    @include responsive-sm {
+      height: 200px;
+    }
+  }
+
+  .la-main__charts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr;
+    grid-gap: 10px;
+
+    @include responsive-sm {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+    }
+    @include responsive-xs {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+    }
+
+    .la-main__img-01 {
+      background: yellow;
+      // background-image: url("asset/graph01.png");
+    }
+
+    .la-main__img-02 {
+      background: red;
+      // background-image: url("asset/graph02.png");
+    }
+
+    .la-main__img-03 {
+      background: green;
+      // background-image: url("asset/graph03.png");
+    }
+
+    .la-main__img-04 {
+      background: aqua;
+      // background-image: url("asset/graph04.png");
+      grid-column: 1 / span 2;
+
+      @include responsive-sm {
+        grid-column: 1 / span 1;
+      }
+      @include responsive-xs {
+        grid-column: 1 / span 1;
+      }
+    }
+
+    .la-main__img-05 {
+      background: lightgreen;
+      // background-image: url("asset/graph05.png");
+    }
+  }
+
+  table {
+    width: 100%;
+
+    th,
+    td {
+      padding: 0 30px;
+    }
+
+    th {
+      background: paleturquoise;
+      text-align: left;
+      padding: 10px 30px;
+    }
+
+    .la-table__edit {
+    }
+
+    td {
+      background: peachpuff;
+    }
+
+    .la-table__income,
+    .la-table__balance,
+    .la-table__edit,
+    .la-table__btn {
+      text-align: center;
+    }
+
+    @include responsive-xs {
+      .la-table__name,
+      .la-table__account,
+      .la-table__edit {
+        padding-left: 10px;
+      }
+    }
+
+    .la-table__name {
+      display: flex;
+
+      .la-table__avatar {
+        align-self: center;
+
+        @include responsive-sm {
+          display: none;
+        }
+        @include responsive-xs {
+          display: none;
+        }
+      }
+
+      p {
+        padding-left: 10px;
+
+        @include responsive-xs {
+          padding: 0;
+        }
+      }
+    }
+
+    @include responsive-sm {
+      .la-table__number {
+        display: none;
+      }
+    }
+
+    @include responsive-xs {
+      .la-table__number {
+        display: none;
+      }
+      .la-table__account {
+        display: none;
+      }
+      .la-table__income {
+        display: none;
+      }
+      .la-table__balance {
+        display: none;
+      }
+    }
+  }
+}
