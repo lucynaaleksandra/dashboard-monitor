@@ -1,11 +1,9 @@
 .la-main {
-  // background: $color-secondary;
-  background: coral;
+  background: $color-secondary;
+  // background: coral;
   padding: 20px;
-  overflow: hidden;
 
   .la-main__header {
-    background: palegreen;
     display: flex;
     justify-content: space-between;
 
@@ -90,81 +88,87 @@
     }
   }
 
-  table {
-    width: 100%;
-    // border: none;
+  .la-table__scroll {
+    // height: 320px;
+    // overflow-y: auto;
 
-    th,
-    td {
-      padding: 0 30px;
-    }
+    table {
+      width: 100%;
+      // border: none;
 
-    th {
-      background: paleturquoise;
-      text-align: left;
-      padding: 10px 30px;
-    }
-
-    td {
-      background: peachpuff;
-    }
-
-    .la-table__income,
-    .la-table__balance,
-    .la-table__edit,
-    .la-table__btn {
-      text-align: center;
-    }
-
-    @include responsive-xs {
-      .la-table__name,
-      .la-table__account,
-      .la-table__edit {
-        padding-left: 10px;
+      th,
+      td {
+        padding: 0 30px;
+        border-radius: 6px;
       }
-    }
 
-    .la-table__name {
-      display: flex;
+      th {
+        background: paleturquoise;
+        text-align: left;
+        padding: 10px 30px;
+      }
 
-      .la-table__avatar {
-        align-self: center;
+      td {
+        background: $color-white;
+      }
 
-        @include responsive-sm {
+      .la-table__income,
+      .la-table__balance,
+      .la-table__edit,
+      .la-table__btn {
+        text-align: center;
+      }
+
+      @include responsive-xs {
+        .la-table__name,
+        .la-table__account,
+        .la-table__edit {
+          padding-left: 10px;
+        }
+      }
+
+      .la-table__name {
+        display: flex;
+
+        .la-table__avatar {
+          align-self: center;
+
+          @include responsive-sm {
+            display: none;
+          }
+          @include responsive-xs {
+            display: none;
+          }
+        }
+
+        p {
+          padding-left: 10px;
+
+          @include responsive-xs {
+            padding: 0;
+          }
+        }
+      }
+
+      @include responsive-sm {
+        .la-table__number {
           display: none;
         }
-        @include responsive-xs {
+      }
+
+      @include responsive-xs {
+        .la-table__number {
           display: none;
         }
-      }
-
-      p {
-        padding-left: 10px;
-
-        @include responsive-xs {
-          padding: 0;
+        .la-table__account {
+          display: none;
         }
-      }
-    }
-
-    @include responsive-sm {
-      .la-table__number {
-        display: none;
-      }
-    }
-
-    @include responsive-xs {
-      .la-table__number {
-        display: none;
-      }
-      .la-table__account {
-        display: none;
-      }
-      .la-table__income {
-        display: none;
-      }
-      .la-table__balance {
-        display: none;
+        .la-table__income {
+          display: none;
+        }
+        .la-table__balance {
+          display: none;
+        }
       }
     }
   }
