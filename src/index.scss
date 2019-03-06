@@ -31,7 +31,7 @@ main {
     grid-template-rows: 100px 1fr;
   }
   @include responsive-xs {
-    // grid-template-rows: 100px 1fr;
+    grid-template-rows: 100px 1fr;
   }
 }
 
