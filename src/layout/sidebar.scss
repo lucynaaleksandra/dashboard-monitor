@@ -1,9 +1,7 @@
 .la-sidebar {
   grid-area: sidebar;
   padding: 10px;
-
-  // @include responsive-sm {
-  // }
+  border: 1px solid $color-secondary;
 
   .la-sidebar__logo {
     grid-template-rows: 10vh;
