@@ -22,6 +22,15 @@
     background-size: cover;
     background-position: bottom left;
     background-repeat: no-repeat;
+
+    @include responsive-sm {
+      background-size: contain;
+      background-position: center;
+    }
+    @include responsive-xs {
+      background-size: contain;
+      background-position: center;
+    }
   }
 
   .la-main__img-01,
@@ -55,22 +64,18 @@
     }
 
     .la-main__img-01 {
-      // background: yellow;
       background-image: url("asset/graph01.png");
     }
 
     .la-main__img-02 {
-      // background: red;
       background-image: url("asset/graph02.png");
     }
 
     .la-main__img-03 {
-      // background: green;
       background-image: url("asset/graph03.png");
     }
 
     .la-main__img-04 {
-      // background: aqua;
       background-image: url("asset/graph04.png");
       grid-column: 1 / span 2;
 
@@ -78,12 +83,12 @@
         grid-column: 1 / span 1;
       }
       @include responsive-xs {
+        background-size: contain;
         grid-column: 1 / span 1;
       }
     }
 
     .la-main__img-05 {
-      // background: lightgreen;
       background-image: url("asset/graph05.png");
     }
   }
@@ -94,7 +99,7 @@
 
     table {
       width: 100%;
-      // border: none;
+      border-collapse: collapse;
 
       th,
       td {
@@ -110,6 +115,7 @@
 
       tr {
         background: $color-white;
+        border-bottom: 3px solid $color-secondary;
       }
 
       .la-table__income,
