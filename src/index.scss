@@ -25,6 +25,14 @@ main {
   grid-template-areas:
     "sidebar nav"
     "sidebar main";
+
+  @include responsive-sm {
+    // grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+  }
+  @include responsive-xs {
+    // grid-template-rows: 100px 1fr;
+  }
 }
 
 h3 {

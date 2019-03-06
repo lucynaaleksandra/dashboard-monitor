@@ -3,9 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // flex-wrap: wrap;
   padding: 10px;
 
   @include responsive-sm {
+    flex-direction: column;
+  }
+  @include responsive-xs {
     flex-direction: column;
   }
 
@@ -17,6 +21,7 @@
   .la-nav__menu {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     .dropdown {
       position: relative;
